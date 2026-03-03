@@ -1,56 +1,80 @@
 # 🎬 Movie Recommendation System
 
-A content-based Movie Recommendation System built using Python and Pandas.  
-This project suggests similar movies based on correlation and similarity metrics from user rating data.
+A Content-Based Movie Recommendation System built using **Python, Pandas, and NumPy**.  
+This project analyzes user rating patterns and suggests similar movies using correlation-based similarity metrics.
 
 ---
 
-## 🚀 Features
-- Takes movie name as input
-- Finds similar movies using correlation
-- Returns top 4 recommended movies
-- Uses MovieLens dataset (subset)
+## 🚀 Project Overview
+
+This system recommends movies based on similarity scores computed from user ratings.  
+It uses a subset of the **MovieLens dataset** to generate personalized movie suggestions.
+
+The recommendation engine works by:
+- Creating a user-movie rating matrix
+- Computing correlation between movies
+- Ranking movies based on similarity scores
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 Tech Stack
+
 - Python
 - Pandas
 - NumPy
 - Jupyter Notebook
+- CSV Dataset (MovieLens subset)
 
 ---
 
-## 📊 Dataset
-This project uses a subset of the MovieLens dataset containing:
-- Movie titles
-- User ratings
+## 📊 Dataset Information
+
+The dataset contains:
 - Movie IDs
+- Movie Titles
+- User Ratings
+
+The system processes the dataset to create a pivot table (User vs Movie matrix) and computes similarity using Pearson correlation.
 
 ---
 
-## ⚙️ How It Works
+## ⚙️ System Workflow
+
 1. Load dataset using Pandas
-2. Create user-movie rating matrix
-3. Compute correlation between movies
-4. Return top similar movies based on similarity score
+2. Clean and preprocess data
+3. Create pivot table (user-movie matrix)
+4. Compute correlation between movies
+5. Sort movies based on similarity score
+6. Return top recommended movies
 
 ---
 
-## ▶️ How to Run
-1. Open the Jupyter Notebook file:
-   `Movie Recommender System.ipynb`
-2. Run all cells
-3. Enter a movie name to get recommendations
+## 🧠 Recommendation Logic
+
+- Uses **Pandas corrwith()** to calculate similarity
+- Filters movies with sufficient rating counts
+- Sorts by correlation value
+- Returns Top 4 most similar movies
+
+---
+
+## ▶️ How to Run the Project
+
+1. Clone the repository:  git clone https://github.com/shubhamkrbxr22/Movie-Recommendation-System.git
+2. Open the Jupyter Notebook: Movie Recommender System.ipynb
+
+3. Run all cells
+
+4. Enter a movie name to get recommendations
 
 ---
 
 ## 📌 Example Output
 
-Input:  
-`12 Angry Men (1957)`
+**Input:**
+12 Angry Men (1957)
 
-Output:
+**Output:**
 - Ulee's Gold (1997)
 - Rear Window (1954)
 - Seven Years in Tibet (1997)
@@ -58,5 +82,32 @@ Output:
 
 ---
 
+## 🔮 Future Improvements
+
+- Add GUI using Streamlit
+- Deploy as Web Application
+- Use Cosine Similarity
+- Implement Collaborative Filtering
+- Deploy on cloud (AWS / Render / Railway)
+
+---
+
+## 📂 Repository Structure
+Movie-Recommendation-System/
+│
+├── Movie Recommender System.ipynb
+├── dataset.csv
+├── movieIdTitles.csv
+├── MovieRecommendations.csv
+└── README.md
+
+---
+
 ## 👨‍💻 Author
-Shubham Kumar
+
+**Shubham Kumar**  
+GitHub: https://github.com/shubhamkrbxr22
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
