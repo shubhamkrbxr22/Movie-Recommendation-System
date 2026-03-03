@@ -96,9 +96,13 @@ The system processes the dataset to create a pivot table (User vs Movie matrix) 
 Movie-Recommendation-System/
 
 ├── Movie Recommender System.ipynb
+
 ├── dataset.csv
+
 ├── movieIdTitles.csv
+
 ├── MovieRecommendations.csv
+
 └── README.md
 
 ---
