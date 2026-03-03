@@ -94,7 +94,7 @@ The system processes the dataset to create a pivot table (User vs Movie matrix) 
 
 ## 📂 Repository Structure
 Movie-Recommendation-System/
-│
+
 ├── Movie Recommender System.ipynb
 ├── dataset.csv
 ├── movieIdTitles.csv
