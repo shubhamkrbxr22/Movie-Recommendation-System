@@ -1,13 +1,62 @@
-# Movie-Recommendation-System-Using-Python
- In this python project where using Pandas library we will find correlation and created basic Movie Recommender System with Python.
- 
-It is an extension from the project: https://github.com/krishnaik06/Movie-Recommender-in-python
+# 🎬 Movie Recommendation System
 
-The Dataset used is a subset of MovieLens Dataset.
+A content-based Movie Recommendation System built using Python and Pandas.  
+This project suggests similar movies based on correlation and similarity metrics from user rating data.
 
-### Extension
-Have created a text input bar to add your movie whose recommendation you want. Output will give you top 4 matches that are recommended movies.
+---
 
-### Results
-![Screen Shot 2020-06-06 at 9 36 16 PM](https://user-images.githubusercontent.com/15246084/83949017-fdefa080-a83e-11ea-9b21-9c278a8dea45.png)
-![Screen Shot 2020-06-06 at 9 36 41 PM](https://user-images.githubusercontent.com/15246084/83949019-ffb96400-a83e-11ea-9607-3d1dbf5c3769.png)
+## 🚀 Features
+- Takes movie name as input
+- Finds similar movies using correlation
+- Returns top 4 recommended movies
+- Uses MovieLens dataset (subset)
+
+---
+
+## 🛠 Technologies Used
+- Python
+- Pandas
+- NumPy
+- Jupyter Notebook
+
+---
+
+## 📊 Dataset
+This project uses a subset of the MovieLens dataset containing:
+- Movie titles
+- User ratings
+- Movie IDs
+
+---
+
+## ⚙️ How It Works
+1. Load dataset using Pandas
+2. Create user-movie rating matrix
+3. Compute correlation between movies
+4. Return top similar movies based on similarity score
+
+---
+
+## ▶️ How to Run
+1. Open the Jupyter Notebook file:
+   `Movie Recommender System.ipynb`
+2. Run all cells
+3. Enter a movie name to get recommendations
+
+---
+
+## 📌 Example Output
+
+Input:  
+`12 Angry Men (1957)`
+
+Output:
+- Ulee's Gold (1997)
+- Rear Window (1954)
+- Seven Years in Tibet (1997)
+- Clerks (1994)
+
+---
+
+## 👨‍💻 Author
+Shubham Kumar
